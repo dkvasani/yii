@@ -26,3 +26,45 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/yii/dk/index.php?r=gi
 ---
+2014/04/19 14:17:46 [error] [exception.CException] exception 'CException' with message 'Property "User.title" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('title')
+#1 C:\wamp\www\yii\dk\protected\components\UserIdentity.php(22): CActiveRecord->__get('title')
+#2 C:\wamp\www\yii\dk\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\wamp\www\yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\wamp\www\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\wamp\www\yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\wamp\www\yii\dk\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/dk/index.php?r=site/login
+HTTP_REFERER=http://localhost/yii/dk/index.php?r=site/login
+---
+2014/04/19 14:20:25 [error] [exception.CException] exception 'CException' with message 'Property "User.title" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('title')
+#1 C:\wamp\www\yii\dk\protected\components\UserIdentity.php(23): CActiveRecord->__get('title')
+#2 C:\wamp\www\yii\dk\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\wamp\www\yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\wamp\www\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\wamp\www\yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\wamp\www\yii\dk\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/dk/index.php?r=site/login
+HTTP_REFERER=http://localhost/yii/dk/index.php?r=site/login
+---
