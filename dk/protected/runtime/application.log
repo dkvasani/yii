@@ -68,3 +68,444 @@ Stack trace:
 REQUEST_URI=/yii/dk/index.php?r=site/login
 HTTP_REFERER=http://localhost/yii/dk/index.php?r=site/login
 ---
+2014/04/19 15:00:28 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/dk/index.php?r=user/admin
+HTTP_REFERER=http://localhost/yii/dk/index.php?r=user/create
+---
+2014/04/19 15:00:47 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/dk/index.php?r=user/admin
+HTTP_REFERER=http://localhost/yii/dk/index.php?r=user/index
+---
+2014/04/19 15:01:29 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/dk/index.php?r=user/admin
+HTTP_REFERER=http://localhost/yii/dk/index.php?r=user
+---
+2014/04/19 15:27:03 [error] [exception.CException] exception 'CException' with message 'StudentController cannot find the requested view "index".' in C:\wamp\www\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#1 C:\wamp\www\yii\dk\protected\controllers\StudentController.php(37): CController->render('index')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): StudentController->actionIndex()
+#3 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('student/index')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/dk/index.php?r=student/index
+HTTP_REFERER=http://localhost/yii/dk/index.php?r=user
+---
+2014/04/19 15:39:25 [error] [exception.CException] exception 'CException' with message 'Property "StudentController.record" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\dk\protected\views\student\index.php(7): CComponent->__get('record')
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\yii...')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\yii...', Array, true)
+#3 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\yii...', Array, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#5 C:\wamp\www\yii\dk\protected\controllers\StudentController.php(39): CController->render('index', Array)
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): StudentController->actionIndex()
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('student/index')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/dk/index.php?r=student/index
+---
+2014/04/19 15:49:58 [error] [exception.CException] exception 'CException' with message 'Property "StudentController.record" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\dk\protected\views\student\index.php(7): CComponent->__get('record')
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\yii...')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\yii...', Array, true)
+#3 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\yii...', Array, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#5 C:\wamp\www\yii\dk\protected\controllers\StudentController.php(53): CController->render('index', Array)
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): StudentController->actionIndex()
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('student/index')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/dk/index.php?r=student/index
+HTTP_REFERER=http://localhost/yii/dk/index.php?r=student/index
+---
+2014/04/19 15:50:03 [error] [exception.CException] exception 'CException' with message 'Property "StudentController.record" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\dk\protected\views\student\index.php(7): CComponent->__get('record')
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\yii...')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\yii...', Array, true)
+#3 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\yii...', Array, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#5 C:\wamp\www\yii\dk\protected\controllers\StudentController.php(53): CController->render('index', Array)
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): StudentController->actionIndex()
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('student/index')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/dk/index.php?r=student/index
+---
+2014/04/19 15:50:25 [error] [exception.CException] exception 'CException' with message 'Property "StudentForm.firstname" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2529): CComponent->__get('firstname')
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(StudentForm), 'firstname')
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(StudentForm), 'firstname', Array)
+#3 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(StudentForm), 'firstname', Array)
+#4 C:\wamp\www\yii\dk\protected\views\student\student.php(41): CActiveForm->textField(Object(StudentForm), 'firstname')
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\yii...')
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\yii...', Array, true)
+#7 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\yii...', Array, true)
+#8 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('student', Array, true)
+#9 C:\wamp\www\yii\dk\protected\controllers\StudentController.php(39): CController->render('student', Array)
+#10 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): StudentController->actionAdd()
+#11 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('add')
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('student/add')
+#16 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/yii/dk/index.php?r=student/add
+---
+2014/04/19 15:51:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "student".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('student')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('student')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('student/student')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/dk/index.php?r=student/student
+---
+2014/04/19 15:52:02 [error] [exception.CException] exception 'CException' with message 'Property "StudentForm.firstname" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2529): CComponent->__get('firstname')
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(StudentForm), 'firstname')
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(StudentForm), 'firstname', Array)
+#3 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(StudentForm), 'firstname', Array)
+#4 C:\wamp\www\yii\dk\protected\views\student\student.php(41): CActiveForm->textField(Object(StudentForm), 'firstname')
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\yii...')
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\yii...', Array, true)
+#7 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\yii...', Array, true)
+#8 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('student', Array, true)
+#9 C:\wamp\www\yii\dk\protected\controllers\StudentController.php(39): CController->render('student', Array)
+#10 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): StudentController->actionAdd()
+#11 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('add')
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('student/add')
+#16 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/yii/dk/index.php?r=student/add
+---
+2014/04/19 16:02:51 [error] [exception.CException] exception 'CException' with message 'Property "StudentForm.gender" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2529): CComponent->__get('gender')
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1802): CHtml::resolveValue(Object(StudentForm), 'gender')
+#2 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(847): CHtml::activeDropDownList(Object(StudentForm), 'gender', Array, Array)
+#3 C:\wamp\www\yii\dk\protected\views\student\student.php(58): CActiveForm->dropDownList(Object(StudentForm), 'gender', Array)
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\yii...')
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\yii...', Array, true)
+#6 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\yii...', Array, true)
+#7 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('student', Array, true)
+#8 C:\wamp\www\yii\dk\protected\controllers\StudentController.php(41): CController->render('student', Array)
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): StudentController->actionAdd()
+#10 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('add')
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('student/add')
+#15 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/dk/index.php?r=student/add
+---
+2014/04/19 16:19:28 [warning] [application] Failed to set unsafe attribute "gender" of "StudentForm".
+in C:\wamp\www\yii\dk\protected\controllers\StudentController.php (35)
+in C:\wamp\www\yii\dk\index.php (13)
+2014/04/19 16:20:11 [error] [php] mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() (C:\wamp\www\yii\dk\protected\controllers\SiteController.php:67)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#2 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\yii\dk\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/dk/index.php?r=site/contact
+in C:\wamp\www\yii\dk\protected\controllers\SiteController.php (67)
+in C:\wamp\www\yii\dk\index.php (13)
+2014/04/19 16:20:59 [error] [php] mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() (C:\wamp\www\yii\dk\protected\controllers\SiteController.php:68)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#2 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\yii\dk\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/dk/index.php?r=site/contact
+in C:\wamp\www\yii\dk\protected\controllers\SiteController.php (68)
+in C:\wamp\www\yii\dk\index.php (13)
+2014/04/19 16:21:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "situdent/add".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('situdent/add')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/dk/index.php?r=situdent/add
+---
+2014/04/19 16:23:51 [warning] [application] Failed to set unsafe attribute "gender" of "StudentForm".
+in C:\wamp\www\yii\dk\protected\controllers\StudentController.php (35)
+in C:\wamp\www\yii\dk\index.php (13)
+2014/04/19 16:25:11 [warning] [application] Failed to set unsafe attribute "gender" of "StudentForm".
+in C:\wamp\www\yii\dk\protected\controllers\StudentController.php (35)
+in C:\wamp\www\yii\dk\index.php (13)
+2014/04/19 16:25:11 [error] [exception.CException] exception 'CException' with message 'StudentForm and its behaviors do not have a method or closure named "save".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\yii\dk\protected\controllers\StudentController.php(39): CComponent->__call('save', Array)
+#1 C:\wamp\www\yii\dk\protected\controllers\StudentController.php(39): StudentForm->save()
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): StudentController->actionAdd()
+#3 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('add')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('student/add')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/dk/index.php?r=student/add
+HTTP_REFERER=http://localhost/yii/dk/index.php?r=student/add
+---
+2014/04/19 16:27:34 [warning] [application] Failed to set unsafe attribute "gender" of "StudentForm".
+in C:\wamp\www\yii\dk\protected\controllers\StudentController.php (35)
+in C:\wamp\www\yii\dk\index.php (13)
+2014/04/19 16:27:34 [error] [php] Undefined index: firstname (C:\wamp\www\yii\dk\protected\controllers\StudentController.php:39)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): StudentController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): StudentController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): StudentController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\dk\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/dk/index.php?r=student/add
+in C:\wamp\www\yii\dk\protected\controllers\StudentController.php (39)
+in C:\wamp\www\yii\dk\index.php (13)
+2014/04/19 16:35:15 [warning] [application] Failed to set unsafe attribute "gender" of "StudentForm".
+in C:\wamp\www\yii\dk\protected\controllers\StudentController.php (35)
+in C:\wamp\www\yii\dk\index.php (13)
+2014/04/19 16:35:16 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'gender' cannot be null. The SQL statement executed was: INSERT INTO student(firstname, lastname, email, gender) VALUES(:firstname, :lastname, :email,:gender).
+in C:\wamp\www\yii\dk\protected\controllers\StudentController.php (46)
+in C:\wamp\www\yii\dk\index.php (13)
+2014/04/19 16:35:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'gender' cannot be null. The SQL statement executed was: INSERT INTO student(firstname, lastname, email, gender) VALUES(:firstname, :lastname, :email,:gender)' in C:\wamp\www\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\yii\dk\protected\controllers\StudentController.php(46): CDbCommand->execute()
+#1 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): StudentController->actionAdd()
+#2 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('add')
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('student/add')
+#7 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/dk/index.php?r=student/add
+HTTP_REFERER=http://localhost/yii/dk/index.php?r=student/add
+---
+2014/04/19 16:35:40 [warning] [application] Failed to set unsafe attribute "gender" of "StudentForm".
+in C:\wamp\www\yii\dk\protected\controllers\StudentController.php (35)
+in C:\wamp\www\yii\dk\index.php (13)
+2014/04/19 16:35:40 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: INSERT INTO student(firstname, lastname, email, gender) VALUES(:firstname, :lastname, :email,:gender).
+in C:\wamp\www\yii\dk\protected\controllers\StudentController.php (46)
+in C:\wamp\www\yii\dk\index.php (13)
+2014/04/19 16:35:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: INSERT INTO student(firstname, lastname, email, gender) VALUES(:firstname, :lastname, :email,:gender)' in C:\wamp\www\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\yii\dk\protected\controllers\StudentController.php(46): CDbCommand->execute()
+#1 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): StudentController->actionAdd()
+#2 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('add')
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('student/add')
+#7 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/dk/index.php?r=student/add
+HTTP_REFERER=http://localhost/yii/dk/index.php?r=student/add
+---
+2014/04/19 16:36:03 [warning] [application] Failed to set unsafe attribute "gender" of "StudentForm".
+in C:\wamp\www\yii\dk\protected\controllers\StudentController.php (35)
+in C:\wamp\www\yii\dk\index.php (13)
+2014/04/19 16:36:03 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'gender' cannot be null. The SQL statement executed was: INSERT INTO student(firstname, lastname, email, gender) VALUES(:firstname, :lastname, :email,:gender).
+in C:\wamp\www\yii\dk\protected\controllers\StudentController.php (46)
+in C:\wamp\www\yii\dk\index.php (13)
+2014/04/19 16:36:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'gender' cannot be null. The SQL statement executed was: INSERT INTO student(firstname, lastname, email, gender) VALUES(:firstname, :lastname, :email,:gender)' in C:\wamp\www\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\yii\dk\protected\controllers\StudentController.php(46): CDbCommand->execute()
+#1 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): StudentController->actionAdd()
+#2 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('add')
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('student/add')
+#7 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/dk/index.php?r=student/add
+HTTP_REFERER=http://localhost/yii/dk/index.php?r=student/add
+---
+2014/04/19 16:36:32 [warning] [application] Failed to set unsafe attribute "gender" of "StudentForm".
+in C:\wamp\www\yii\dk\protected\controllers\StudentController.php (35)
+in C:\wamp\www\yii\dk\index.php (13)
+2014/04/19 16:40:34 [error] [exception.CException] exception 'CException' with message 'CDbConnection and its behaviors do not have a method or closure named "fetchAll".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\yii\dk\protected\controllers\StudentController.php(65): CComponent->__call('fetchAll', Array)
+#1 C:\wamp\www\yii\dk\protected\controllers\StudentController.php(65): CDbConnection->fetchAll('select * from s...')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): StudentController->actionIndex()
+#3 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('student/index')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/dk/index.php?r=student/index
+HTTP_REFERER=http://localhost/yii/dk/index.php?r=student/add
+---
+2014/04/19 16:41:00 [error] [exception.CException] exception 'CException' with message 'CDbConnection and its behaviors do not have a method or closure named "findAll".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\yii\dk\protected\controllers\StudentController.php(65): CComponent->__call('findAll', Array)
+#1 C:\wamp\www\yii\dk\protected\controllers\StudentController.php(65): CDbConnection->findAll('select * from s...')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): StudentController->actionIndex()
+#3 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('student/index')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/dk/index.php?r=student/index
+HTTP_REFERER=http://localhost/yii/dk/index.php?r=student/add
+---
+2014/04/19 16:42:39 [error] [exception.CException] exception 'CException' with message 'Property "StudentController.record" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\dk\protected\views\student\index.php(7): CComponent->__get('record')
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\yii...')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\yii...', Array, true)
+#3 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\yii...', Array, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#5 C:\wamp\www\yii\dk\protected\controllers\StudentController.php(68): CController->render('index', Array)
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): StudentController->actionIndex()
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('student/index')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/dk/index.php?r=student/index
+HTTP_REFERER=http://localhost/yii/dk/index.php?r=student/add
+---
+2014/04/19 16:42:42 [error] [exception.CException] exception 'CException' with message 'Property "StudentController.record" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\dk\protected\views\student\index.php(7): CComponent->__get('record')
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\yii...')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\yii...', Array, true)
+#3 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\yii...', Array, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#5 C:\wamp\www\yii\dk\protected\controllers\StudentController.php(68): CController->render('index', Array)
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): StudentController->actionIndex()
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('student/index')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/dk/index.php?r=student/index
+---
+2014/04/19 16:43:47 [error] [exception.CException] exception 'CException' with message 'CDbCommand and its behaviors do not have a method or closure named "fetchAll".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\yii\dk\protected\controllers\StudentController.php(66): CComponent->__call('fetchAll', Array)
+#1 C:\wamp\www\yii\dk\protected\controllers\StudentController.php(66): CDbCommand->fetchAll()
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): StudentController->actionIndex()
+#3 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('student/index')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/dk/index.php?r=student/index
+---
+2014/04/19 16:43:55 [error] [exception.CException] exception 'CException' with message 'CDbCommand and its behaviors do not have a method or closure named "findAll".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\yii\dk\protected\controllers\StudentController.php(66): CComponent->__call('findAll', Array)
+#1 C:\wamp\www\yii\dk\protected\controllers\StudentController.php(66): CDbCommand->findAll()
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): StudentController->actionIndex()
+#3 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('student/index')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/dk/index.php?r=student/index
+---

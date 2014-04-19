@@ -87,6 +87,7 @@ class SiteController extends Controller
 		}
 
 		// collect user input data
+		
 		if(isset($_POST['LoginForm']))
 		{
 			$model->attributes=$_POST['LoginForm'];
