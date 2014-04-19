@@ -1,0 +1,28 @@
+2014/04/19 12:17:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/dk/index.php?r=gii
+---
+2014/04/19 12:30:30 [error] [php] mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() (C:\wamp\www\yii\dk\protected\controllers\SiteController.php:67)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#2 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\yii\dk\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/dk/index.php?r=site/contact
+in C:\wamp\www\yii\dk\protected\controllers\SiteController.php (67)
+in C:\wamp\www\yii\dk\index.php (13)
+2014/04/19 12:46:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gi".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gi')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/dk/index.php?r=gi
+---
