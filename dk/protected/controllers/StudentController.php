@@ -55,8 +55,4 @@ class StudentController extends Controller
 		$this->render('index',array('record'=> $record));
 	}
 
-
-
-
-
 }
