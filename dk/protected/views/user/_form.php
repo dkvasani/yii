@@ -14,6 +14,7 @@
         // There is a call to performAjaxValidation() commented in generated controller code.
         // See class documentation of CActiveForm for details on this.
         'enableAjaxValidation' => false,
+        'htmlOptions' => array('enctype' => 'multipart/form-data'),
     ));
     ?>
 
@@ -40,7 +41,14 @@
     </div>
     <div class="row">
         <?php
-        $this->widget('CMultiFileUpload', array(
+        echo $form->labelEx($model, 'upload photo');
+        echo $form->fileField($model, 'file');
+        echo $form->error($model, 'file');
+        ?>
+    </div>
+    <div class="row">
+        <?php
+        /*$this->widget('CMultiFileUpload', array(
             'model' => $model,
             'attribute' => 'photos',
             'accept' => 'jpg|gif|png',
@@ -54,14 +62,14 @@
             ),
             'denied' => 'File is not allowed',
             'max' => 10, // max 10 files
-        ));
+        ));*/
         ?>
     </div> 
     <div class="row buttons">
-        <?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+    <?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
     </div>
 
-    <?php $this->endWidget(); ?>
+<?php $this->endWidget(); ?>
 
 </div><!-- form -->
 

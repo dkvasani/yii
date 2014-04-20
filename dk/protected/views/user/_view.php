@@ -20,6 +20,10 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('email')); ?>:</b>
 	<?php echo CHtml::encode($data->email); ?>
 	<br />
+        
+	<b><?php echo CHtml::encode($data->getAttributeLabel('file')); ?>:</b>
+        <img src="<?php echo Yii::app()->baseUrl; ?><?php echo CHtml::encode($data->file); ?>" alt ="<?php echo CHtml::encode($data->file); ?>">
+	<br />
 
 
 </div>

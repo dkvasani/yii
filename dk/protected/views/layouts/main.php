@@ -30,12 +30,13 @@
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/site/index')),
-				array('label'=>'Users', 'url'=>array('/user')),
-				array('label'=>'Student', 'url'=>array('/student/index')),	
+				array('label'=>'Users', 'url'=>array('/user'),'visible'=> !Yii::app()->user->isGuest),
+				array('label'=>'Student', 'url'=>array('/student/index'),'visible'=> !Yii::app()->user->isGuest),	
 				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Contact', 'url'=>array('/site/contact')),
-				array('label'=>'City', 'url'=>array('/city/index')),
-				array('label'=>'State', 'url'=>array('/state/index')),
+				array('label'=>'City', 'url'=>array('/city/index'),'visible'=> !Yii::app()->user->isGuest),
+				array('label'=>'State', 'url'=>array('/state/index'),'visible'=> !Yii::app()->user->isGuest),
+				array('label'=>'ImportCsv', 'url'=>array('/importcsv'),'visible'=> !Yii::app()->user->isGuest),
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),

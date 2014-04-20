@@ -1659,3 +1659,367 @@ Stack trace:
 #16 {main}
 REQUEST_URI=/yii/dk/index.php?r=city/create
 ---
+2014/04/20 13:16:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "add".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('add')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('add')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/add')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/dk/index.php?r=user/add
+---
+2014/04/20 13:22:35 [warning] [application] Failed to set unsafe attribute "image" of "User".
+in C:\wamp\www\yii\dk\protected\controllers\UserController.php (67)
+in C:\wamp\www\yii\dk\index.php (13)
+2014/04/20 13:22:35 [warning] [application] Failed to set unsafe attribute "image" of "User".
+in C:\wamp\www\yii\dk\protected\controllers\UserController.php (69)
+in C:\wamp\www\yii\dk\index.php (13)
+2014/04/20 14:12:30 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.student" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\base\CModule.php(105): CComponent->__get('student')
+#1 C:\wamp\www\yii\dk\protected\views\student\student.php(15): CModule->__get('student')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\yii...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\yii...', Array, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\yii...', Array, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('student', Array, true)
+#6 C:\wamp\www\yii\dk\protected\controllers\StudentController.php(39): CController->render('student', Array)
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): StudentController->actionAdd()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('add')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('student/add')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/dk/index.php?r=student/add
+---
+2014/04/20 14:12:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "add".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('add')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('add')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('city/add')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/dk/index.php?r=city/add
+---
+2014/04/20 14:16:39 [warning] [application] Failed to set unsafe attribute "file" of "User".
+in C:\wamp\www\yii\dk\protected\controllers\UserController.php (68)
+in C:\wamp\www\yii\dk\index.php (13)
+2014/04/20 14:16:39 [warning] [application] Failed to set unsafe attribute "file" of "User".
+in C:\wamp\www\yii\dk\protected\controllers\UserController.php (70)
+in C:\wamp\www\yii\dk\index.php (13)
+2014/04/20 14:46:03 [error] [php] move_uploaded_file(upload/importCsv/d1.csv): failed to open stream: No such file or directory (C:\wamp\www\yii\dk\protected\modules\importcsv\controllers\DefaultController.php:315)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\wamp\www\yii\framework\web\CController.php(286): DefaultController->runAction()
+#2 C:\wamp\www\yii\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(282): DefaultController->run()
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\yii\dk\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/dk/index.php?r=importcsv/default/upload
+in C:\wamp\www\yii\dk\protected\modules\importcsv\controllers\DefaultController.php (315)
+in C:\wamp\www\yii\dk\index.php (13)
+2014/04/20 15:04:06 [error] [exception.CException] exception 'CException' with message 'Property "ImportcsvModule.password" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\www\yii\framework\base\CModule.php(513): CComponent->__set('password', 'thinker99')
+#1 C:\wamp\www\yii\framework\base\CModule.php(86): CModule->configure(Array)
+#2 C:\wamp\www\yii\framework\YiiBase.php(206): CModule->__construct('importcsv', NULL, Array)
+#3 C:\wamp\www\yii\framework\base\CModule.php(282): YiiBase::createComponent('importcsv.Impor...', 'importcsv', NULL, Array)
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(337): CModule->getModule('importcsv')
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('importcsv')
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('importcsv')
+#7 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/dk/index.php?r=importcsv
+---
+2014/04/20 15:12:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "importCSv/index".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('importCSv/index')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/dk/index.php?r=importCSv/index
+---
+2014/04/20 15:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "importCSv".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('importCSv')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/dk/index.php?r=importCSv
+---
+2014/04/20 15:40:59 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "index".' in C:\wamp\www\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#1 C:\wamp\www\yii\dk\protected\modules\importcsv\controllers\DefaultController.php(302): CController->render('index', Array)
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#3 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('importcsv')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/dk/index.php?r=importcsv
+---
+2014/04/20 15:41:08 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "index".' in C:\wamp\www\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#1 C:\wamp\www\yii\dk\protected\modules\importcsv\controllers\DefaultController.php(302): CController->render('index', Array)
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#3 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('importcsv')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/dk/index.php?r=importcsv
+---
+2014/04/20 15:41:26 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "index".' in C:\wamp\www\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#1 C:\wamp\www\yii\dk\protected\modules\importcsv\controllers\DefaultController.php(302): CController->render('index', Array)
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#3 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('importcsv')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/dk/index.php?r=importcsv
+---
+2014/04/20 15:41:49 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "index".' in C:\wamp\www\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#1 C:\wamp\www\yii\dk\protected\modules\importcsv\controllers\DefaultController.php(302): CController->render('index', Array)
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#3 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('importcsv')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/dk/index.php?r=importcsv
+---
+2014/04/20 15:44:49 [error] [php] Declaration of DefaultController::beforeAction() should be compatible with CController::beforeAction($action) (C:\wamp\www\yii\dk\protected\modules\importcsv\controllers\DefaultController.php:54)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#2 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#3 C:\wamp\www\yii\dk\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/dk/index.php?r=importcsv
+in C:\wamp\www\yii\dk\protected\modules\importcsv\controllers\DefaultController.php (54)
+in C:\wamp\www\yii\dk\index.php (13)
+2014/04/20 15:45:28 [error] [php] Declaration of Controller::beforeAction() should be compatible with CController::beforeAction($action) (C:\wamp\www\yii\dk\protected\components\Controller.php:7)
+Stack trace:
+#0 C:\wamp\www\yii\dk\protected\modules\importcsv\controllers\DefaultController.php(55): spl_autoload_call()
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(354): require()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(338): CWebApplication->createController()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\yii\dk\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/dk/index.php?r=importcsv
+in C:\wamp\www\yii\dk\protected\components\Controller.php (7)
+in C:\wamp\www\yii\dk\protected\modules\importcsv\controllers\DefaultController.php (55)
+in C:\wamp\www\yii\dk\index.php (13)
+2014/04/20 15:45:48 [error] [php] Declaration of Controller::beforeAction() should be compatible with CController::beforeAction($action) (C:\wamp\www\yii\dk\protected\components\Controller.php:7)
+Stack trace:
+#0 C:\wamp\www\yii\dk\protected\modules\importcsv\controllers\DefaultController.php(55): spl_autoload_call()
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(354): require()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(338): CWebApplication->createController()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\yii\dk\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/dk/index.php?r=importcsv
+in C:\wamp\www\yii\dk\protected\components\Controller.php (7)
+in C:\wamp\www\yii\dk\protected\modules\importcsv\controllers\DefaultController.php (55)
+in C:\wamp\www\yii\dk\index.php (13)
+2014/04/20 15:55:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('create')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('student/create')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/dk/index.php?r=student/create
+---
+2014/04/20 16:02:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "importcsv/login".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('importcsv/login')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/dk/index.php?r=importcsv/login
+---
+2014/04/20 16:02:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "importcsv/login".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('importcsv/login')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/dk/index.php?r=importcsv/login
+---
+2014/04/20 16:03:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "importcsv/login".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('importcsv/login')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/dk/index.php?r=importcsv/login
+---
+2014/04/20 16:03:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "importcsv/login".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('importcsv/login')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/dk/index.php?r=importcsv/login
+---
+2014/04/20 16:07:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "importcsv/site/login".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('importcsv/site/...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/dk/index.php?r=importcsv/site/login
+---
+2014/04/20 16:07:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "importcsv/site/login".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('importcsv/site/...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/dk/index.php?r=importcsv/site/login
+---
+2014/04/20 16:07:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "importcsv/site/login".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('importcsv/site/...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/dk/index.php?r=importcsv/site/login
+---
+2014/04/20 16:11:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "importcsv/site/login".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('importcsv/site/...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/dk/index.php?r=importcsv/site/login
+---
+2014/04/20 16:13:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "importcsv/login".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('importcsv/login')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/dk/index.php?r=importcsv/login
+---
+2014/04/20 16:13:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "importcsv/login".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('importcsv/login')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/dk/index.php?r=importcsv/login
+---
+2014/04/20 16:13:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "importcsv/../login".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('importcsv/../lo...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/dk/index.php?r=importcsv/../login
+---
+2014/04/20 16:20:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "importcsv".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('importcsv')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('importcsv')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/importcsv')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/dk/index.php?r=site/importcsv
+HTTP_REFERER=http://localhost/yii/dk/index.php
+---
+2014/04/20 16:20:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "importcsv".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('importcsv')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('importcsv')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/importcsv')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/dk/index.php?r=site/importcsv
+HTTP_REFERER=http://localhost/yii/dk/index.php?r=site/importcsv
+---
+2014/04/20 18:49:13 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.username" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CWebUser.php(146): CComponent->__get('username')
+#1 C:\wamp\www\yii\dk\protected\views\layouts\main.php(39): CWebUser->__get('username')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\yii...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\yii...', Array, true)
+#4 C:\wamp\www\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\wamp\www\yii...', Array, true)
+#5 C:\wamp\www\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 C:\wamp\www\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#8 C:\wamp\www\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 C:\wamp\www\yii\dk\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\yii...')
+#11 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\yii...', Array, true)
+#12 C:\wamp\www\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\wamp\www\yii...', Array, true)
+#13 C:\wamp\www\yii\dk\protected\controllers\SiteController.php(99): CController->render('login', Array)
+#14 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#15 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#19 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#20 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/yii/dk/index.php?r=site/login
+---
+2014/04/20 18:50:12 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.isUsername" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CWebUser.php(146): CComponent->__get('isUsername')
+#1 C:\wamp\www\yii\dk\protected\views\layouts\main.php(39): CWebUser->__get('isUsername')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\yii...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\yii...', Array, true)
+#4 C:\wamp\www\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\wamp\www\yii...', Array, true)
+#5 C:\wamp\www\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 C:\wamp\www\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#8 C:\wamp\www\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 C:\wamp\www\yii\dk\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\yii...')
+#11 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\yii...', Array, true)
+#12 C:\wamp\www\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\wamp\www\yii...', Array, true)
+#13 C:\wamp\www\yii\dk\protected\controllers\SiteController.php(99): CController->render('login', Array)
+#14 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#15 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#19 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#20 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\wamp\www\yii\dk\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/yii/dk/index.php?r=site/login
+HTTP_REFERER=http://localhost/yii/dk/index.php?r=site/login
+---
