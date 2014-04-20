@@ -73,18 +73,18 @@ class UserController extends Controller
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
-
+                
 		$this->render('create',array(
 			'model'=>$model,
 		));
-	}
+            }    
 
 	/**
 	 * Updates a particular model.
 	 * If update is successful, the browser will be redirected to the 'view' page.
 	 * @param integer $id the ID of the model to be updated
 	 */
-	public function actionUpdate($id)
+    public function actionUpdate($id)
 	{
 		$model=$this->loadModel($id);
 

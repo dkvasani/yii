@@ -15,4 +15,4 @@ $this->menu=array(
 
 <h1>Create City</h1>
 
-<?php $this->renderPartial('_form', array('model'=>$model,'country' => $country ,'state' => $state)); ?>
+<?php $this->renderPartial('_form', array('model'=>$model,'country' => $country,'countryid' => $countryid ,'state' => $state)); ?>

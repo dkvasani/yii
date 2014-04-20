@@ -59,7 +59,10 @@ class CityController extends Controller {
      */
     public function actionCreate() {
         $model = new City;
-
+        $countryId = Yii::app()->getRequest()->getQuery('countryid');
+        if(empty($countryId)){
+            $countryId = 1;
+        }
         // Uncomment the following line if AJAX validation is needed
         // $this->performAjaxValidation($model);
         
@@ -71,8 +74,9 @@ class CityController extends Controller {
 
         $this->render('create', array(
             'model' => $model,
+            'countryid' => $countryId,
             'country' => $this->getCountry(),
-            'state' => $this->getState(),
+            'state' => $this->getState($countryId),
         ));
     }
 
@@ -172,9 +176,9 @@ class CityController extends Controller {
         }
         return $countryData;
     }
-    private function getState(){
+    private function getState($countryid){
         $connection = Yii::app()->db;
-        $commandState = $connection->createCommand('select * from state');
+        $commandState = $connection->createCommand("select * from state where countryid= {$countryid}");
         $state = $commandState->queryAll();
         $stateData = array();
         foreach ($state as $key => $value) {
